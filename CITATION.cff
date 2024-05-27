@@ -1,1 +1,12 @@
-Shakiba, M., & Rassouli, F. B. (2024). Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: A meta-analysis. Scientific Reports, 14(1), 11770. https://doi.org/10.1038/s41598-024-62747-z
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+authors:
+  - family-names: Shakiba
+    given-names: Mohammadhosein
+    orcid: https://orcid.org/0009-0003-4404-7759
+  - family-names: Rassouli
+    given-names: Fatemeh B.
+title: "Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: A meta-analysis"
+doi: 10.1038/s41598-024-62747-z
+date-released: 2024-05-27
+preferred-citation: article
