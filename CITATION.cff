@@ -1,5 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
+authors:
+  - family-names: Shakiba
+    given-names: Mohammadhosein
+    orcid: https://orcid.org/0009-0003-4404-7759
+  - family-names: Rassouli
+    given-names: Fatemeh B.
 preferred-citation:
   type: article
   authors:
