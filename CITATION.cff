@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+authors:
+  - family-names: Shakiba
+    given-names: Mohammadhosein
+    orcid: https://orcid.org/0009-0003-4404-7759
+  - family-names: Rassouli
+    given-names: Fatemeh B.
+title: "Data from: Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: A meta-analysis"
+version: 1.0.0
+doi: https://doi.org/10.5061/dryad.cvdncjt9k
+date-released: 2024-05-27
