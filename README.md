@@ -15,7 +15,6 @@ The repository is organized as follows:
 │   ├── RandomForestClassifier.py
 │   └── RandomForestRegressor.py
 ├── 3D-Viab-Dose-Time.py
-├── CITATION.cff
 ├── Cancer-Pie.py
 ├── Cancer-Viab-Dose.py
 ├── Heat-Cor.py
@@ -26,7 +25,6 @@ The repository is organized as follows:
 - `ML/RandomForestClassifier.py`: Python script implementing the Random Forest Classifier for identifying influential features.
 - `ML/RandomForestRegressor.py`: Python script implementing the Random Forest Regressor (if applicable).
 - `3D-Viab-Dose-Time.py`: Python script for generating 3D scatter plots of viability, dose, and time.
-- `CITATION.cff`: File containing citation metadata for the paper.
 - `Cancer-Pie.py`: Python script for generating pie charts of cancer types distribution.
 - `Cancer-Viab-Dose.py`: Python script for plotting the relationship between cancer type, viability, and dose.
 - `Heat-Cor.py`: Python script for generating heatmaps of correlations between variables.
