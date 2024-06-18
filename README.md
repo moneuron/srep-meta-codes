@@ -1,4 +1,4 @@
-# Code from: [Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis](https://www.nature.com/articles/s41598-024-62747-z)
+# [Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis](https://www.nature.com/articles/s41598-024-62747-z)
 
 This repository contains the Python codes used for data analysis and visualization in the paper titled "Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis" by Mohammadhosein Shakiba and Fatemeh B. Rassouli.
 
