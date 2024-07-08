@@ -1,5 +1,5 @@
 # [Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis](https://www.nature.com/articles/s41598-024-62747-z)
-##### by [Mo Shakiba](https://moshakiba.me)
+##### by [Mo Shakiba](https://github.com/moneuron)
 
 This repository contains the Python codes used for data analysis and visualization in the paper titled "Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis" by Mohammadhosein Shakiba and Fatemeh B. Rassouli.
 
