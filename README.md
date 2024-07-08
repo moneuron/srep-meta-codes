@@ -34,13 +34,7 @@ The repository is organized as follows:
 
 ## Requirements
 
-To run the Python scripts in this repository, you'll need to have the following packages installed:
-
-- numpy
-- pandas
-- matplotlib
-- seaborn
-- scikit-learn
+To run the Python scripts in this repository, you'll need to have the required packages installed.
 
 You can install these packages using the following command:
 
