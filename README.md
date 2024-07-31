@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/joining-up-the-scattered-anticancer-knowledge/classification-on-aur-umb-dataset)](https://paperswithcode.com/sota/classification-on-aur-umb-dataset?p=joining-up-the-scattered-anticancer-knowledge)
+
 # [Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis](https://www.nature.com/articles/s41598-024-62747-z)
 ##### by [Mo Shakiba](https://github.com/moneuron)
 
