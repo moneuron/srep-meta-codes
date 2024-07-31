@@ -5,7 +5,7 @@ This repository contains the Python codes used for data analysis and visualizati
 
 ## Overview
 
-The paper presents a meta-analysis of the anticancer effects of auraptene and umbelliprenin, two naturally occurring prenylated coumarins, across various human cancer cell lines. The analysis synthesizes evidence from 27 in vitro studies and employs data visualization techniques, machine learning approaches, and statistical meta-analysis methods to quantify their anticancer efficacy.
+The paper is a meta-analysis of the anticancer effects of auraptene and umbelliprenin, two naturally occurring prenylated coumarins, across various human cancer cell lines. The analysis synthesizes evidence from 27 in vitro studies and employs data visualization techniques, machine learning approaches, and statistical meta-analysis methods to quantify their anticancer efficacy.
 
 ## Repository Structure
 
