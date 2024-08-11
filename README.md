@@ -51,3 +51,6 @@ pip install -r requirements.txt
 3. Run the desired Python scripts to generate the corresponding visualizations or analyses.
 
 Please note that the scripts may require modification to match the specific data formats and requirements of your analysis.
+
+If you use this code, please cite it as below:
+> Shakiba, M., Rassouli, F.B. Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis. Sci Rep 14, 11770 (2024). https://doi.org/10.1038/s41598-024-62747-z
