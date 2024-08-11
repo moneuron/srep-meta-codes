@@ -19,8 +19,9 @@ The repository is organized as follows:
 ├── Cancer-Pie.py
 ├── Cancer-Viab-Dose.py
 ├── Heat-Cor.py
+├── README.md
 ├── Reg-Scatter-All.py
-└── README.md
+└── requirements.txt
 ```
 
 - `ML/RandomForestClassifier.py`: Python script implementing the Random Forest Classifier for identifying influential features.
@@ -29,8 +30,9 @@ The repository is organized as follows:
 - `Cancer-Pie.py`: Python script for generating pie charts of cancer types distribution.
 - `Cancer-Viab-Dose.py`: Python script for plotting the relationship between cancer type, viability, and dose.
 - `Heat-Cor.py`: Python script for generating heatmaps of correlations between variables.
-- `Reg-Scatter-All.py`: Python script for plotting the relationship between viability and dose across different cell lines.
 - `README.md`: This file, providing an overview of the repository.
+- `Reg-Scatter-All.py`: Python script for plotting the relationship between viability and dose across different cell lines.
+- `requirements.txt`:  required packages to run the code.
 
 ## Requirements
 
