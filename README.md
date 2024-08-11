@@ -1,7 +1,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/joining-up-the-scattered-anticancer-knowledge/classification-on-aur-umb-dataset)](https://paperswithcode.com/sota/classification-on-aur-umb-dataset?p=joining-up-the-scattered-anticancer-knowledge)
 
 # [Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis](https://www.nature.com/articles/s41598-024-62747-z)
-> by [Mo Shakiba](https://github.com/moneuron)
+##### by [Mo Shakiba](https://github.com/moneuron)
 
 This repository contains the Python codes used for data analysis and visualization in the paper titled "Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis" by Mohammadhosein Shakiba and Fatemeh B. Rassouli.
 
@@ -52,5 +52,7 @@ pip install -r requirements.txt
 
 Please note that the scripts may require modification to match the specific data formats and requirements of your analysis.
 
-If you use this code, please cite it as below:
-> Shakiba, M., Rassouli, F.B. Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis. Sci Rep 14, 11770 (2024). https://doi.org/10.1038/s41598-024-62747-z
+## CITATION
+```
+Shakiba, M., Rassouli, F.B. Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis. Sci Rep 14, 11770 (2024). https://doi.org/10.1038/s41598-024-62747-z
+```
