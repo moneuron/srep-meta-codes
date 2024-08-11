@@ -1,10 +1,9 @@
 # srep-meta-codes
 ##### by [Mo Shakiba](https://github.com/moneuron)
 
-**This repository contains the Python codes used for analysis and visualization in the paper titled "[Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis](https://www.nature.com/articles/s41598-024-62747-z)" by Mohammadhosein Shakiba and Fatemeh B. Rassouli.**
-
 ## Overview
 
+**This repository contains the Python codes used for analysis and visualization in the paper titled "[Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis](https://www.nature.com/articles/s41598-024-62747-z)" by Mohammadhosein Shakiba and Fatemeh B. Rassouli.**
 The paper is a meta-analysis of the anticancer effects of auraptene and umbelliprenin, two naturally occurring prenylated coumarins, across various human cancer cell lines. The analysis synthesizes evidence from 27 in vitro studies and employs data visualization techniques, machine learning approaches, and statistical meta-analysis methods to quantify their anticancer efficacy.
 
 ## Repository Structure
