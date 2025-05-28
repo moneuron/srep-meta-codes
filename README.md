@@ -1,5 +1,4 @@
 # srep-meta-codes
-##### by [Mo Shakiba](https://github.com/moneuron)
 
 ## Overview
 
