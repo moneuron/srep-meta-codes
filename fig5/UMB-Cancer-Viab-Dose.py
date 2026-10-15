@@ -2,9 +2,11 @@ import pandas as pd
 from tqdm.auto import tqdm
 import seaborn as sns
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 # Load the data
-file_path = 'NEWum.csv'
+root = Path(__file__).resolve().parent.parent
+file_path = f"{root / 'data' / 'UMB.csv'}"
 df = pd.read_csv(file_path)
 
 # Create a scatter plot to visualize the relationship between coumarin dose and cell viability

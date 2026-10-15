@@ -1,57 +1,127 @@
 # srep-meta-codes
 
-## Overview
+Analysis and visualization code for:
 
-**This repository contains the Python codes used for analysis and visualization in the paper titled "[Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis](https://www.nature.com/articles/s41598-024-62747-z)" by Mohammadhosein Shakiba and Fatemeh B. Rassouli.**
+> Shakiba M, Rassouli FB. **Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis.** *Scientific Reports* 14, 11770 (2024). https://doi.org/10.1038/s41598-024-62747-z
 
-The paper is a meta-analysis of the anticancer effects of auraptene and umbelliprenin, two naturally occurring prenylated coumarins, across various human cancer cell lines. The analysis synthesizes evidence from 27 in vitro studies and employs data visualization techniques, machine learning approaches, and statistical meta-analysis methods to quantify their anticancer efficacy.
+[![Paper](https://img.shields.io/badge/DOI:-10.1038%2Fs41598--024--62747--z-blue)](https://doi.org/10.1038/s41598-024-62747-z)
+[![Data](https://img.shields.io/badge/Data-Dryad-green)](https://doi.org/10.5061/dryad.cvdncjt9k)
 
-## Repository Structure
+## What this is
 
-The repository is organized as follows:
+Auraptene (AUR) and umbelliprenin (UMB) are prenylated coumarins with reported anticancer activity in cell lines. The paper synthesizes 27 in vitro studies to quantify dose-dependent effects on cell viability, compare the two compounds, and rank which factors (dose, cancer type, treatment duration, compound) most strongly influence toxicity.
 
-```
-├── ML/
-│   ├── RandomForestClassifier.py
-│   └── RandomForestRegressor.py
-├── 3D-Viab-Dose-Time.py
-├── Cancer-Pie.py
-├── Cancer-Viab-Dose.py
-├── Heat-Cor.py
-├── README.md
-├── Reg-Scatter-All.py
-└── requirements.txt
-```
+This repository contains the Python scripts for the figures and the machine-learning analysis. The extracted study data are archived separately on Dryad.
 
-- `ML/RandomForestClassifier.py`: Python script implementing the Random Forest Classifier for identifying influential features.
-- `ML/RandomForestRegressor.py`: Python script implementing the Random Forest Regressor (if applicable).
-- `3D-Viab-Dose-Time.py`: Python script for generating 3D scatter plots of viability, dose, and time.
-- `Cancer-Pie.py`: Python script for generating pie charts of cancer types distribution.
-- `Cancer-Viab-Dose.py`: Python script for plotting the relationship between cancer type, viability, and dose.
-- `Heat-Cor.py`: Python script for generating heatmaps of correlations between variables.
-- `README.md`: This file, providing an overview of the repository.
-- `Reg-Scatter-All.py`: Python script for plotting the relationship between viability and dose across different cell lines.
-- `requirements.txt`:  required packages to run the code.
+## Data
 
-## Requirements
+The dataset is deposited at **https://doi.org/10.5061/dryad.cvdncjt9k**.
 
-To run the Python scripts in this repository, you'll need to have the required packages installed.
+| File | Contents |
+| --- | --- |
+| `AUR.csv` | Extracted observations for auraptene |
+| `UMB.csv` | Extracted observations for umbelliprenin |
+| `combined.csv` | AUR and UMB observations combined |
 
-You can install these packages using the following command:
+Download the files from Dryad and place them in a `data/` folder at the repository root:
 
 ```
+srep-meta-codes/
+├── data/
+│   ├── AUR.csv
+│   ├── UMB.csv
+│   └── combined.csv
+└── ...
+```
+
+The column definitions are in the dataset's own README on Dryad.
+
+## Repository contents
+
+The analysis scripts are organized by the figure number in the paper:
+
+```text
+srep-meta-codes/
+├── fig3/
+│   ├── AUR-Pie.py
+│   └── UMB-Pie.py
+├── fig4/
+│   ├── AUR-3D-Viab-Dose-Time.py
+│   └── UMB-3D-Viab-Dose-Time.py
+├── fig5/
+│   ├── AUR-Cancer-Viab-Dose.py
+│   └── UMB-Cancer-Viab-Dose.py
+├── fig6/
+│   └── Reg-Scatter-All.py
+├── fig7/
+│   ├── AUR-Heat-Cor.py
+│   └── UMB-Heat-Cor.py
+└── fig8/
+    ├── RandomForestClassifier.py
+    └── RandomForestRegressor.py
+```
+
+| Figure | Script | What it produces | Input |
+| --- | --- | --- | --- |
+| 3 | `fig3/AUR-Pie.py` | AUR cancer-type distribution pie chart | `data/AUR.csv` |
+| 3 | `fig3/UMB-Pie.py` | UMB cancer-type distribution pie chart | `data/UMB.csv` |
+| 4 | `fig4/AUR-3D-Viab-Dose-Time.py` | AUR 3D scatter plot of time, dose and viability | `data/AUR.csv` |
+| 4 | `fig4/UMB-3D-Viab-Dose-Time.py` | UMB 3D scatter plot of time, dose and viability | `data/UMB.csv` |
+| 5 | `fig5/AUR-Cancer-Viab-Dose.py` | AUR viability versus dose, grouped by cancer type | `data/AUR.csv` |
+| 5 | `fig5/UMB-Cancer-Viab-Dose.py` | UMB viability versus dose, grouped by cancer type | `data/UMB.csv` |
+| 6 | `fig6/Reg-Scatter-All.py` | Viability versus dose scatter plots with regression lines for both compounds and cell lines | `data/combined.csv` |
+| 7 | `fig7/AUR-Heat-Cor.py` | AUR correlation heatmap for dose, treatment time and viability | `data/AUR.csv` |
+| 7 | `fig7/UMB-Heat-Cor.py` | UMB correlation heatmap for dose, treatment time and viability | `data/UMB.csv` |
+| 8 | `fig8/RandomForestClassifier.py` | Random-forest classification metrics and feature-importance plots | `data/combined.csv` |
+| 8 | `fig8/RandomForestRegressor.py` | Random-forest regression metrics and feature-importance plot | `data/combined.csv` |
+
+## Installation
+
+```bash
+git clone https://github.com/moneuron/srep-meta-codes.git
+cd srep-meta-codes
+python -m venv .venv && source .venv/bin/activate   # optional
 pip install -r requirements.txt
 ```
 
+Use Python 3 with the packages listed in `requirements.txt`.
+
 ## Usage
 
-1. Clone the repository to your local machine.
-2. Place the raw data files in the appropriate directory (if applicable).
-3. Run the desired Python scripts to generate the corresponding visualizations or analyses.
+After placing the data files in `data/`, run a script from the repository root. Each script displays its plot(s) and does not write an output file:
 
-Please note that the scripts may require modification to match the specific data formats and requirements of your analysis.
+```bash
+python fig3/AUR-Pie.py
+python fig3/UMB-Pie.py
+python fig4/AUR-3D-Viab-Dose-Time.py
+python fig4/UMB-3D-Viab-Dose-Time.py
+python fig5/AUR-Cancer-Viab-Dose.py
+python fig5/UMB-Cancer-Viab-Dose.py
+python fig6/Reg-Scatter-All.py
+python fig7/AUR-Heat-Cor.py
+python fig7/UMB-Heat-Cor.py
+python fig8/RandomForestClassifier.py
+python fig8/RandomForestRegressor.py
+```
+
+The figure scripts use `AUR.csv` or `UMB.csv`; the figure 6 and figure 8 scripts use `combined.csv`.
 
 ## Citation
+
+If you use this code or data, please cite the paper and the dataset.
+
+**Paper**
+
 ```
-Shakiba, M., Rassouli, F.B. Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis. Sci Rep 14, 11770 (2024). https://doi.org/10.1038/s41598-024-62747-z
+Shakiba, M., Rassouli, F.B. Joining up the scattered anticancer knowledge on
+auraptene and umbelliprenin: a meta-analysis. Sci Rep 14, 11770 (2024).
+https://doi.org/10.1038/s41598-024-62747-z
+```
+
+**Dataset**
+
+```
+Shakiba, M., Rassouli, F.B. (2024). Data from: Joining up the scattered anticancer
+knowledge on auraptene and umbelliprenin: A meta-analysis [Dataset]. Dryad.
+https://doi.org/10.5061/dryad.cvdncjt9k
 ```

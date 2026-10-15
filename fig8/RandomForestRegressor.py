@@ -6,9 +6,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import mean_absolute_error
+from pathlib import Path
 
 # Load the data
-file_path = 'all.csv'
+root = Path(__file__).resolve().parent.parent
+file_path = f"{root / 'data' / 'combined.csv'}"
 data = pd.read_csv(file_path)
 # Encode categorical variables
 from sklearn.preprocessing import LabelEncoder

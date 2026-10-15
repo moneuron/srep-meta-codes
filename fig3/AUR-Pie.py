@@ -1,9 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from pathlib import Path
 
 # Load the data
-file_path = 'NEWum.csv'
+root = Path(__file__).resolve().parent.parent
+file_path = f"{root / 'data' / 'AUR.csv'}"
 df = pd.read_csv(file_path)
 
 cancer_type_counts = df['cancerType'].value_counts()

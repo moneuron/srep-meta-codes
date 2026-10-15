@@ -1,9 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from pathlib import Path
 
 # Load the data
-file_path = 'all.csv'
+root = Path(__file__).resolve().parent.parent
+file_path = f"{root / 'data' / 'combined.csv'}"
 df = pd.read_csv(file_path)
 
 # Set the color palette to a publication-friendly palette

@@ -2,9 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
+from pathlib import Path
 
-# Load data from CSV file
-data = pd.read_csv('NEWum.csv')
+# Load the data
+root = Path(__file__).resolve().parent.parent
+file_path = f"{root / 'data' / 'AUR.csv'}"
+data = pd.read_csv(file_path)
 
 #data = data[data['coumarinDose'] <= 200]
 
