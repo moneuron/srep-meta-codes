@@ -5,7 +5,6 @@ Analysis and visualization code for:
 > Shakiba M, Rassouli FB. **Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis.** *Scientific Reports* 14, 11770 (2024). https://doi.org/10.1038/s41598-024-62747-z
 
 [![Paper](https://img.shields.io/badge/DOI:-10.1038%2Fs41598--024--62747--z-blue)](https://doi.org/10.1038/s41598-024-62747-z)
-[![Data](https://img.shields.io/badge/Data-Dryad-green)](https://doi.org/10.5061/dryad.cvdncjt9k)
 
 ## What this is
 
@@ -15,7 +14,11 @@ This repository contains the Python scripts for the figures and the machine-lear
 
 ## Data
 
-The dataset is deposited at **https://doi.org/10.5061/dryad.cvdncjt9k**.
+The dataset is deposited at:
+
+[![Dryad](https://img.shields.io/badge/Dryad-10.5061%2Fdryad.cvdncjt9k-green)](https://doi.org/10.5061/dryad.cvdncjt9k)
+[![Kaggle](https://img.shields.io/badge/Kaggle-aur--umb--dataset-20BEFF)](https://www.kaggle.com/datasets/moneuron/aur-umb-dataset)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-aur--umb--dataset-FFD21E)](https://huggingface.co/datasets/moneuron/aur-umb-dataset)
 
 | File | Contents |
 | --- | --- |
@@ -23,7 +26,7 @@ The dataset is deposited at **https://doi.org/10.5061/dryad.cvdncjt9k**.
 | `UMB.csv` | Extracted observations for umbelliprenin |
 | `combined.csv` | AUR and UMB observations combined |
 
-Download the files from Dryad and place them in a `data/` folder at the repository root:
+Download the files and place them in a `data/` folder at the repository root:
 
 ```
 srep-meta-codes/
