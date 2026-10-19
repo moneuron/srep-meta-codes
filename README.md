@@ -2,7 +2,7 @@
 
 Analysis and visualization code for:
 
-> Shakiba M, Rassouli FB. **Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis.** *Scientific Reports* 14, 11770 (2024). https://doi.org/10.1038/s41598-024-62747-z
+> Shakiba M, Rassouli FB. **Joining up the scattered anticancer knowledge on auraptene and umbelliprenin: a meta-analysis.** *Scientific Reports* 14, 11770 (2024).
 
 [![Paper](https://img.shields.io/badge/DOI:-10.1038%2Fs41598--024--62747--z-blue)](https://doi.org/10.1038/s41598-024-62747-z)
 
